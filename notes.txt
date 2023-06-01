@@ -1,0 +1,39 @@
+-Crear espacio virtual
+mkdir django
+cd django
+python -m venv .
+
+-Activar/Desactivar espaci virtual
+source bin/activate.fish
+deactivate
+
+-Instalar Django en una version especifica
+pip install Django==3.2.5
+
+-Instalar un rango de version de django
+pip install "Django>=3.2,<3.3"
+
+ -Actualizar pip
+ pip install --upgrade pip
+
+ -Ver comando disponibles de django
+ python -m django
+
+ -Crear proyecto
+ python django startproject name .
+
+ -Estructura del proyecto
+> __init__.py
+> asgi.py
+> settings.py
+> urls.py
+> wsgi.py
+
+-Ver comandos de manage.py
+python manage.py
+
+-Crear archivo de requerimientos
+echo "django>=3.2,<3.3"
+
+-Pasar todas las librerias instaladas a requirements
+pip freeze > requirements.txt
